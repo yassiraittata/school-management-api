@@ -1,0 +1,26 @@
+POST http://localhost:8080/students/new
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyY2ZiODI1OS04YWQ1LTQ5ODMtOTE2ZC05Mjc1Yzg0NjgyNGIiLCJlbWFpbCI6ImVtYWlsQGVtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY3NTQ2MTMwOSwiZXhwIjoxNjc1NDYxNDI5fQ.Bj9eVVih0xM18c8699eo5J6b9memPGKtXMkfMDBDMm4
+
+{
+  "email": "khalid@email.coma",
+  "phone" : "13456789",
+  "birthday": "2022-12-25T12:00:00.000Z",
+  "fullname": "khalid",
+  "classroomId": "c9ce3e50-2421-41fb-9da7-3696007d1988"
+}
+
+### Get all students
+GET http://localhost:8080/students
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsImVtYWlsIjoiZW1haWxAZW1haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE2NzUyODU1NjEsImV4cCI6MTY3NTI4NTY4MX0.MsuTX59nrJXorx6QGnJUzXNxiwdlkfLcWbTx30k90p0
+
+### Get a single student
+GET http://localhost:8080/students/8
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjUsImVtYWlsIjoiZW1haWxAZW1haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjc1MzU1NDE5LCJleHAiOjE2NzUzNTU1Mzl9.dOyMZJ7421QE-76fNLYOhSY8wt3RLZMTjk9MWxYsW1k
+
+### Get student by class
+GET http://localhost:8080/students?class=c9ce3e50-2421-41fb-9da7-3696007d1988
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyY2ZiODI1OS04YWQ1LTQ5ODMtOTE2ZC05Mjc1Yzg0NjgyNGIiLCJlbWFpbCI6ImVtYWlsQGVtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY3NTQ2MTU3NywiZXhwIjoxNjc1NDYxNjk3fQ.Meckv2-NDC33D75uZl9F0IdqkaHAP6ynFN8kQvaYp0c

@@ -1,0 +1,13 @@
+POST http://localhost:8080/classes/new
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyY2ZiODI1OS04YWQ1LTQ5ODMtOTE2ZC05Mjc1Yzg0NjgyNGIiLCJlbWFpbCI6ImVtYWlsQGVtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY3NTQ2MzA2MCwiZXhwIjoxNjc1NDYzMTgwfQ.bUh5VsYqDzNMR8gBIcABy8rXVtWcbtEeWaKtcX_YHeI
+
+{
+   "title": "class 7",
+   "teacherId": "2fbc11a3-ae0c-4223-a82d-47749d352a21"
+}
+
+### Get clss by teacher
+GET http://localhost:8080/classes/classes
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyZmJjMTFhMy1hZTBjLTQyMjMtYTgyZC00Nzc0OWQzNTJhMjEiLCJlbWFpbCI6ImFtaW5lQGVtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjc1NDYzMTg1LCJleHAiOjE2NzU0NjMzMDV9.v8AsmDrhMaQJWW8BVQSIFWjPGI7C685GbiQceUnYAQc

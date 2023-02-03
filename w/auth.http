@@ -1,0 +1,31 @@
+POST http://localhost:8080/auth/signup
+Content-Type: application/json
+
+{
+   "fullname": "amine",
+   "email":"amine@email.com",
+   "password" : "123"
+}
+
+### sign in
+POST http://localhost:8080/auth/signin
+Content-Type: application/json
+
+{
+   "email":"amine@email.com",
+   "password" : "123"
+}
+
+### sign out
+POST http://localhost:8080/auth/signout
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsImVtYWlsIjoiZW1haWxAZW1haWwuY29tIiwicm9sZSI6InVzZXIiLCJpYXQiOjE2NzUyNzgwMzMsImV4cCI6MTY3NTI3ODkzM30.KUv8RaWyM5JRLR6HFTKW0iTpUnianFRI1vXX7OfzZ3Q
+
+{}
+
+### refresh token
+POST http://localhost:8080/auth/refresh
+Content-Type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjUsImVtYWlsIjoiZW1haWxAZW1haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjc1MzU2MTkwLCJleHAiOjE2NzU1MDczOTB9.WDv14KOv4pNGcaAs3h6cHMKI89Qula3K0hDnWx7ETuw
+
+{}
